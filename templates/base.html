@@ -1,0 +1,119 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DarEn BLOG || HOME</title>
+    <link rel="icon" href="{% static 'img/favicon.png' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+
+    <link rel="stylesheet" href="{% static "css/themify-icons.css" %}">
+
+    <link rel="stylesheet" href="{% static "css/liner_icon.css" %}">
+    <link rel="stylesheet" href="{% static "css/search.css" %}">
+
+    <link rel="stylesheet" href={% static "css/style.css" %}>
+    <script nonce="9989af5e-5020-40e7-af88-46ccb3c3bf6d">(function (w, d) {
+        !function (dp, dq, dr, ds) {
+            dp[dr] = dp[dr] || {};
+            dp[dr].executed = [];
+            dp.zaraz = {deferred: [], listeners: []};
+            dp.zaraz.q = [];
+            dp.zaraz._f = function (dt) {
+                return async function () {
+                    var du = Array.prototype.slice.call(arguments);
+                    dp.zaraz.q.push({m: dt, a: du})
+                }
+            };
+            for (const dv of ["track", "set", "debug"]) dp.zaraz[dv] = dp.zaraz._f(dv);
+            dp.zaraz.init = () => {
+                var dw = dq.getElementsByTagName(ds)[0], dx = dq.createElement(ds),
+                    dy = dq.getElementsByTagName("title")[0];
+                dy && (dp[dr].t = dq.getElementsByTagName("title")[0].text);
+                dp[dr].x = Math.random();
+                dp[dr].w = dp.screen.width;
+                dp[dr].h = dp.screen.height;
+                dp[dr].j = dp.innerHeight;
+                dp[dr].e = dp.innerWidth;
+                dp[dr].l = dp.location.href;
+                dp[dr].r = dq.referrer;
+                dp[dr].k = dp.screen.colorDepth;
+                dp[dr].n = dq.characterSet;
+                dp[dr].o = (new Date).getTimezoneOffset();
+                if (dp.dataLayer) for (const dC of Object.entries(Object.entries(dataLayer).reduce(((dD, dE) => ({...dD[1], ...dE[1]})), {}))) zaraz.set(dC[0], dC[1], {scope: "page"});
+                dp[dr].q = [];
+                for (; dp.zaraz.q.length;) {
+                    const dF = dp.zaraz.q.shift();
+                    dp[dr].q.push(dF)
+                }
+                dx.defer = !0;
+                for (const dG of [localStorage, sessionStorage]) Object.keys(dG || {}).filter((dI => dI.startsWith("_zaraz_"))).forEach((dH => {
+                    try {
+                        dp[dr]["z_" + dH.slice(7)] = JSON.parse(dG.getItem(dH))
+                    } catch {
+                        dp[dr]["z_" + dH.slice(7)] = dG.getItem(dH)
+                    }
+                }));
+                dx.referrerPolicy = "origin";
+                dx.src = "https://preview.colorlib.com/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(dp[dr])));
+                dw.parentNode.insertBefore(dx, dw)
+            };
+            ["complete", "interactive"].includes(dq.readyState) ? zaraz.init() : dp.addEventListener("DOMContentLoaded", zaraz.init)
+        }(w, d, "zarazData", "script");
+    })(window, document);</script>
+</head>
+<body>
+
+{% include 'navbar.html' %}
+
+
+{% block content %}
+
+    
+{% endblock %}
+
+
+{% include 'footer.html' %}
+
+
+<script src={% static "js/jquery-1.12.1.min.js" %}></script>
+
+<script src={% static "js/popper.min.js" %}></script>
+
+<script src={% static "js/bootstrap.min.js" %}></script>
+
+<script src="{% static "js/custom.js" %}"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+        integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+        data-cf-beacon='{"rayId":"84781beb4dd007a2","b":1,"version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
